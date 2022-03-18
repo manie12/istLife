@@ -1,19 +1,18 @@
-import {TypesAction,postTypes} from '../Types'
+import { TypesAction, postTypes } from "../Types";
 
-const initialState:string[] = [];
 
 export type actionTypes = {
-    type:"postData",
-    payload:postTypes
-}
+  type: "postData";
+  payload: postTypes;
+};
 
-const reducers = (state: string[] = initialState, action:actionTypes) => {
-switch (action?.type) {
+const reducers = (state: string[] = [], action: actionTypes) => {
+  switch (action?.type) {
     case TypesAction?.POSTDATA:
-        return [...state, action.payload]
+      return [...state, action.payload];
     default:
-        break;
-}
+      return state;
+  }
 };
 
 export default reducers;

@@ -1,9 +1,8 @@
 import axios from "axios";
 // ----------------------------------------------------------------------
-const API_URL = process.env.REACT_APP_BASE_URL_POST;
 
 const axiosInstance = axios.create({
-  baseURL: `${API_URL}/`,
+  baseURL: "https://jsonplaceholder.typicode.com/",
   headers: {
     Accept: "application/json",
     "Content-type": "application/json",
