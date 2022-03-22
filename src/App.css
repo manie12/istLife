@@ -1,0 +1,6 @@
+.hoverTable{
+    display: block;
+}
+.hoverTable:hover{
+    display: none;
+}
